@@ -46,7 +46,7 @@ resource "aws_secutiry_group_rule" "blog_http_in"{
   aws_security_group_id = aws_security_group.blog.id
 }
 
-resource "aws_secutiry_group_rule" "blog_http_in"{
+resource "aws_secutiry_group_rule" "blog_https_in"{
   type        = "ingress"
   from_port   = 433
   to_port     = 433
